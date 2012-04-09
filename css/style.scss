@@ -1,0 +1,63 @@
+@import "compass/reset";
+@import "compass/css3";
+
+$radius : 100px;
+
+$cell : 40px;
+$cell-padding : 25px;
+
+
+body{
+  text-align: center;
+  margin:0 auto;
+}
+
+#plus-button{
+  position:absolute;
+  text-align:center;
+  top: $radius;
+  left: $radius;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  position:relative;
+  text-align:center;
+  margin:100px auto;
+  width:$radius * 2;
+  height:$radius * 2;
+  border:10px solid #CCC;
+  @include transition-property(all);
+  @include transition-duration(1s);
+}
+
+.round{
+  @include border-radius(800px,800px);
+}
+
+.small{
+  position:absolute;
+  width: $cell;
+  height: $cell;
+  padding: $cell-padding;
+  background-color: #EEE;
+  -webkit-animation: popin 1s;
+}
+
+@-webkit-keyframes popin{
+  from {
+    width:0px;
+    height:0px;
+    padding:0px;
+    margin:45px;
+    opacity: 0;
+  }
+  to {
+    width:$cell;
+    height:$cell;
+    padding:$cell-padding;
+    margin:0px;
+    opacity: 100%;
+  }
+}
