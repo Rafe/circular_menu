@@ -73,13 +73,29 @@ body {
 #plus-button {
   position: absolute;
   text-align: center;
-  top: 100px;
-  left: 100px;
-  margin: 0;
-  padding: 0;
+  top: 93px;
+  left: 93px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  width: 15px;
+  height: 15px;
+  padding-bottom: 2px;
+  -webkit-border-radius: 200px 200px;
+  -moz-border-radius: 200px / 200px;
+  -o-border-radius: 200px / 200px;
+  -ms-border-radius: 200px / 200px;
+  -khtml-border-radius: 200px / 200px;
+  border-radius: 200px / 200px;
 }
 
-/* line 24, style.scss */
+/* line 29, style.scss */
+.inner {
+  text-align: center;
+  margin: 25px auto 0;
+}
+
+/* line 34, style.scss */
 .container {
   position: relative;
   text-align: center;
@@ -97,7 +113,7 @@ body {
   transition-duration: 1s;
 }
 
-/* line 35, style.scss */
+/* line 45, style.scss */
 .round {
   -webkit-border-radius: 800px 800px;
   -moz-border-radius: 800px / 800px;
@@ -107,18 +123,19 @@ body {
   border-radius: 800px / 800px;
 }
 
-/* line 39, style.scss */
+/* line 49, style.scss */
 .small {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 25px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
   background-color: #EEE;
   -webkit-animation: popin 1s;
+  cursor: pointer;
 }
 
 @-webkit-keyframes popin {
-  /* line 49, style.scss */
+  /* line 60, style.scss */
   from {
     width: 0px;
     height: 0px;
@@ -127,11 +144,31 @@ body {
     opacity: 0;
   }
 
-  /* line 56, style.scss */
+  /* line 67, style.scss */
   to {
-    width: 40px;
-    height: 40px;
-    padding: 25px;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 0px;
+    opacity: 100%;
+  }
+}
+
+@-moz-keyframes popin {
+  /* line 60, style.scss */
+  from {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 45px;
+    opacity: 0;
+  }
+
+  /* line 67, style.scss */
+  to {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
     margin: 0px;
     opacity: 100%;
   }

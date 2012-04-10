@@ -3,8 +3,8 @@
 
 $radius : 100px;
 
-$cell : 40px;
-$cell-padding : 25px;
+$cell : 80px;
+$cell-padding : 5px;
 
 
 body{
@@ -15,10 +15,20 @@ body{
 #plus-button{
   position:absolute;
   text-align:center;
-  top: $radius;
-  left: $radius;
-  margin:0;
-  padding:0;
+  top: $radius - 7;
+  left: $radius - 7;
+  cursor:pointer;
+  background:black;
+  color:white;
+  width:15px;
+  height:15px;
+  padding-bottom: 2px;
+  @include border-radius(200px, 200px);
+}
+
+.inner{
+  text-align:center;
+  margin: 25px auto 0;
 }
 
 .container{
@@ -43,9 +53,10 @@ body{
   padding: $cell-padding;
   background-color: #EEE;
   -webkit-animation: popin 1s;
+  cursor: pointer;
 }
 
-@-webkit-keyframes popin{
+@mixin frames {
   from {
     width:0px;
     height:0px;
@@ -61,3 +72,11 @@ body{
     opacity: 100%;
   }
 }
+
+@-webkit-keyframes popin{
+  @include frames;
+}
+@-moz-keyframes popin{
+  @include frames;
+}
+
