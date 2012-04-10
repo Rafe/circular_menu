@@ -67,9 +67,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   text-align: center;
   margin: 0 auto;
+  background-color: #333;
 }
 
-/* line 15, style.scss */
+/* line 16, style.scss */
 #plus-button {
   position: absolute;
   text-align: center;
@@ -89,13 +90,13 @@ body {
   border-radius: 200px / 200px;
 }
 
-/* line 29, style.scss */
+/* line 30, style.scss */
 .inner {
   text-align: center;
   margin: 25px auto 0;
 }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 .container {
   position: relative;
   text-align: center;
@@ -113,7 +114,7 @@ body {
   transition-duration: 1s;
 }
 
-/* line 45, style.scss */
+/* line 46, style.scss */
 .round, .item {
   -webkit-border-radius: 800px 800px;
   -moz-border-radius: 800px / 800px;
@@ -123,7 +124,7 @@ body {
   border-radius: 800px / 800px;
 }
 
-/* line 49, style.scss */
+/* line 50, style.scss */
 .item {
   position: absolute;
   width: 80px;
@@ -136,7 +137,7 @@ body {
 }
 
 @-webkit-keyframes popin {
-  /* line 62, style.scss */
+  /* line 63, style.scss */
   from {
     width: 0px;
     height: 0px;
@@ -145,7 +146,7 @@ body {
     opacity: 0;
   }
 
-  /* line 69, style.scss */
+  /* line 70, style.scss */
   to {
     width: 80px;
     height: 80px;
@@ -156,7 +157,7 @@ body {
 }
 
 @-moz-keyframes popin {
-  /* line 62, style.scss */
+  /* line 63, style.scss */
   from {
     width: 0px;
     height: 0px;
@@ -165,7 +166,7 @@ body {
     opacity: 0;
   }
 
-  /* line 69, style.scss */
+  /* line 70, style.scss */
   to {
     width: 80px;
     height: 80px;
