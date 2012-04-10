@@ -46,13 +46,15 @@ body{
   @include border-radius(800px,800px);
 }
 
-.small{
+.item{
+  @extend .round;
   position:absolute;
   width: $cell;
   height: $cell;
   padding: $cell-padding;
   background-color: #EEE;
   -webkit-animation: popin 1s;
+  -moz-animation: popin 1s;
   cursor: pointer;
 }
 

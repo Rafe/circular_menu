@@ -114,7 +114,7 @@ body {
 }
 
 /* line 45, style.scss */
-.round {
+.round, .item {
   -webkit-border-radius: 800px 800px;
   -moz-border-radius: 800px / 800px;
   -o-border-radius: 800px / 800px;
@@ -124,18 +124,19 @@ body {
 }
 
 /* line 49, style.scss */
-.small {
+.item {
   position: absolute;
   width: 80px;
   height: 80px;
   padding: 5px;
   background-color: #EEE;
   -webkit-animation: popin 1s;
+  -moz-animation: popin 1s;
   cursor: pointer;
 }
 
 @-webkit-keyframes popin {
-  /* line 60, style.scss */
+  /* line 62, style.scss */
   from {
     width: 0px;
     height: 0px;
@@ -144,7 +145,7 @@ body {
     opacity: 0;
   }
 
-  /* line 67, style.scss */
+  /* line 69, style.scss */
   to {
     width: 80px;
     height: 80px;
@@ -155,7 +156,7 @@ body {
 }
 
 @-moz-keyframes popin {
-  /* line 60, style.scss */
+  /* line 62, style.scss */
   from {
     width: 0px;
     height: 0px;
@@ -164,7 +165,7 @@ body {
     opacity: 0;
   }
 
-  /* line 67, style.scss */
+  /* line 69, style.scss */
   to {
     width: 80px;
     height: 80px;
