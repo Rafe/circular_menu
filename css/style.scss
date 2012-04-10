@@ -3,8 +3,8 @@
 
 $radius : 100px;
 
-$cell : 80px;
-$cell-padding : 5px;
+$item : 80px;
+$item-padding : 5px;
 
 
 body{
@@ -50,9 +50,9 @@ body{
 .item{
   @extend .round;
   position:absolute;
-  width: $cell;
-  height: $cell;
-  padding: $cell-padding;
+  width: $item;
+  height: $item;
+  padding: $item-padding;
   background-color: #EEE;
   -webkit-animation: popin 1s;
   -moz-animation: popin 1s;
@@ -68,9 +68,9 @@ body{
     opacity: 0;
   }
   to {
-    width:$cell;
-    height:$cell;
-    padding:$cell-padding;
+    width:$item;
+    height:$item;
+    padding:$item-padding;
     margin:0px;
     opacity: 100%;
   }
